@@ -5,6 +5,7 @@
     <html:base/>
   </head>
   <body>
+  	<h1>Welcome abourd, Guest!</h1>
     <html:link page="/jsp/CustomerForm.jsp">Customer Form</html:link>
   </body>
 </html:html>
