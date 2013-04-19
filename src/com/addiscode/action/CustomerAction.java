@@ -24,7 +24,7 @@ public class CustomerAction extends Action {
 		}
 		
 		CustomerForm customerForm = (CustomerForm) form;
-		System.out.printf("Welcome, %s %s\n", customerForm.getFirstName(), customerForm.getFirstName());
+		System.out.printf("Welcome abourd, %s %s!\n", customerForm.getFirstName(), customerForm.getFirstName());
 		//RENDER SUCCESS FORWARD WHICH IS success.jsp
 		return mapping.findForward("success");
 	}
