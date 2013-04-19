@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE struts-config PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 1.1//EN"
+"http://jakarta.apache.org/struts/dtds/struts-config_1_1.dtd">
+<struts-config>
+	<form-beans>
+		<form-bean name="CustomerForm" type="com.addiscode.form.CustomerForm"/>
+	</form-beans>
+	
+	<global-forwards>
+		<forward name="main" path="/index.jsp"/>
+	</global-forwards>
+	
+	<action-mappings>
+		<action path="/submitCustomerForm"
+				type="com.addiscode.action.CustomerAction"
+				name="CustomerForm"
+				validate="true"
+				scope="request"
+				input="index.jsp">
+			<forward name="success" path="/success.jsp"/>
+			<forward name="error" path="/error.jsp"/>
+		</action>
+	</action-mappings>
+	
+	<controller processorClass="org.apache.struts.action.RequestProcessor"/>
+	<message-resources parameter="com.addiscode.app"/>
+</struts-config>
