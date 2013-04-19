@@ -4,7 +4,7 @@
   <head>
     <html:base/>
   </head>
-  <body>
+  <body style="background-color: #cfcfcf">
     <html:link page="/jsp/CustomerForm.jsp">Customer Form</html:link>
   </body>
 </html:html>
