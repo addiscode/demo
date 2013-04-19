@@ -4,8 +4,12 @@
   <head>
     <html:base/>
   </head>
+<<<<<<< HEAD
   <body>
   	<h1>Demo development site</h1>
+=======
+  <body style="background-color: #cfcfcf">
+>>>>>>> testing
     <html:link page="/jsp/CustomerForm.jsp">Customer Form</html:link>
   </body>
 </html:html>
