@@ -26,7 +26,10 @@ public class CustomerForm extends ActionForm {
 	public void setLastName(String lastName) {
 		this.lastName = lastName;
 	}
-
+	
+	/*
+	*	THIS METHOD WILL BE CALLED IF THE VALIDATION PROPERTY SET TRUE ON FORM BEAN DECLARATION FROM struts-config.xml
+	*/
 	public ActionErrors validate(ActionMapping mapping, HttpServletRequest request) {
 		ActionErrors errors = new ActionErrors();
 		if(firstName == null || firstName.trim().equals("")) {

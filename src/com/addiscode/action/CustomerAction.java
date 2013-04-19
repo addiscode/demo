@@ -11,6 +11,10 @@ import org.apache.struts.action.ActionMapping;
 import com.addiscode.form.CustomerForm;
 
 public class CustomerAction extends Action {
+	/*
+	*	THIS METHOD WILL BE EXECUTED BY THE REQUEST PROCESSOR AFTER MAPPING THE ACTION 
+	*	AND IT WILL RETURN ACTION FORWARD TO RENDER A JSP
+	*/
 	
 	public ActionForward execute(ActionMapping mapping, ActionForm form,
 			HttpServletRequest request, HttpServletResponse response) {
